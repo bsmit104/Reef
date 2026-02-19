@@ -813,7 +813,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 20000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 2.388805e-39, y: 4.592e-40, z: 4.591775e-39, w: 3.125635e-39}
   m_UseBoundingSphereOverride: 0
@@ -1156,17 +1156,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1165ec4c3fd804b819608a384ca45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallMaterial: {fileID: 2100000, guid: 3c703b6f22f8c1b4ea819fc17b53cfa4, type: 2}
+  wallMaterial: {fileID: 2100000, guid: 7d095115ae7552346b6e842cc52a5f55, type: 2}
+  wallMaterialB: {fileID: -876546973899608171, guid: 58b01a10692e25446828db2921e29719, type: 3}
   floorShallowMaterial: {fileID: 2100000, guid: 358afa7f2e4ef0a4b8c266c77f429e9b, type: 2}
   floorMidMaterial: {fileID: 2100000, guid: b3b41490b61fbd945a6e518305a06775, type: 2}
   floorDeepMaterial: {fileID: 2100000, guid: 9c332c2684122b545abebef1b2fe9b91, type: 2}
   cellSize: 1
   chunkSize: 16
-  wallTopNoise: 1.8
-  wallNoiseScale: 3.5
-  wallNoiseOctaves: 3
-  wallHeightBoost: 2
-  wallSmoothPasses: 4
+  mesaTopNoise: 1.2
+  mesaNoiseScale: 5
+  mesaNoiseOctaves: 2
+  mesaSmoothPasses: 4
+  mesaSideVariance: 0.3
 --- !u!114 &1315042994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,23 +1187,30 @@ MonoBehaviour:
   persistence: 0.5
   lacunarity: 2
   seed: 42
-  corridorWalkers: 20
-  walkerSteps: 800
-  minBrushSize: 1
-  maxBrushSize: 4
+  mesaCount: 60
+  mesaRadiusMin: 3
+  mesaRadiusMax: 10
+  mesaMinSpacing: 8
+  mesaHeightMin: 6
+  mesaHeightMax: 14
+  chanceRoundMesa: 0.35
+  chanceHourglass: 0.2
+  chanceCanyon: 0.2
+  chanceChunky: 0.15
+  chanceBoulder: 0.1
+  floorVariation: 0.4
+  floorNoiseScale: 20
   shallowHeight: 0
   midHeight: -8
   deepHeight: -16
   zoneNoiseScale: 80
   deepThreshold: 0.3
   midThreshold: 0.6
-  intraZoneVariation: 1.2
-  intraZoneScale: 15
   heightSmoothPasses: 6
-  wallRise: 10
   perimeterWallHeight: 18
-  minWallNeighbors: 3
-  erosionPasses: 3
+  perimeterThickness: 4
+  perimeterNoiseAmount: 5
+  perimeterNoiseScale: 0.08
 --- !u!4 &1315042995
 Transform:
   m_ObjectHideFlags: 0
