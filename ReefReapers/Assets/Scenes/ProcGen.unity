@@ -1157,9 +1157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallMaterial: {fileID: 2100000, guid: 7d095115ae7552346b6e842cc52a5f55, type: 2}
-  wallMaterialB: {fileID: -876546973899608171, guid: 58b01a10692e25446828db2921e29719, type: 3}
-  floorShallowMaterial: {fileID: 2100000, guid: 358afa7f2e4ef0a4b8c266c77f429e9b, type: 2}
-  floorMidMaterial: {fileID: 2100000, guid: b3b41490b61fbd945a6e518305a06775, type: 2}
+  floorShallowMaterial: {fileID: 2100000, guid: f86940f1b3e68434ba103b71da08f9a6, type: 2}
+  floorMidMaterial: {fileID: 2100000, guid: f86940f1b3e68434ba103b71da08f9a6, type: 2}
   floorDeepMaterial: {fileID: 2100000, guid: 9c332c2684122b545abebef1b2fe9b91, type: 2}
   cellSize: 1
   chunkSize: 16
